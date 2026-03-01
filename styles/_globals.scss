@@ -1,0 +1,41 @@
+body {
+  font-family: var(--font-family-base);
+  font-size: 400;
+  color: var(--color-dark);
+  line-height: 1.28;
+  background: url(../../images/hero/bg-top-image.jpg) no-repeat center center/cover;
+
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  @include fluid-text(43, 60);
+}
+h2 {
+  @include fluid-text(36, 40);
+}
+h3 {
+  @include fluid-text(26, 30);
+}
+h4 {
+  @include fluid-text(18, 20);
+}

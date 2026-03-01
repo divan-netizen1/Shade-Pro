@@ -1,0 +1,40 @@
+.section {
+  background-color: var(--color-light);
+  padding-block: var(--section-padding-y);
+  width: 100%;
+
+  &--hidden-x {
+    overflow-x: hidden;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 117px;
+    margin-bottom: 90px;
+
+    @include tablet-above {
+      margin-top: 90px;
+      margin-bottom: 80px;
+    }
+
+    @include tablet {
+      margin-top: 24px;
+      margin-bottom: 70px;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    color: var(--color-red);
+    font-size: 16px;
+  }
+
+  &__description {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: inherit;
+  }
+}

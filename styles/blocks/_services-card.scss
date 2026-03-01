@@ -1,0 +1,75 @@
+.services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: var(--border-radius-medium);
+  min-height: 483px;
+  height: 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+    padding-inline: 25px;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    min-width: 350px;
+
+    @include tablet-above {
+      min-width: 315px;
+    }
+
+    @include tablet {
+      min-width: 95vw;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    @include desktop-above {
+      min-width: 350px;
+    }
+  }
+  &--green-bg {
+    background-color: var(--color-green);
+  }
+  &--blue-bg {
+    background-color: var(--color-blue);
+  }
+  &--red-bg {
+    background-color: var(--color-red);
+  }
+
+  &__image {
+    align-self: center;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__link {
+    align-items: center;
+    column-gap: 12px;
+    font-size: 18px;
+    font-weight: 600;
+
+    @include hover {
+      transform: translateX(10px);
+      transition-duration: var(--transition-duration);
+    }
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 80px;
+    }
+  }
+}

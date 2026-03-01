@@ -1,0 +1,192 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--section-padding-y);
+  --marginBottomText: 30px;
+  margin-top: 82px;
+  margin-bottom: 136px;
+
+  @include desktop {
+    margin-top: 50px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7vw;
+
+    @include tablet {
+      column-gap: 10px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 541px;
+    align-items: start;
+    row-gap: 25px;
+
+    @include tablet {
+      row-gap: 15px;
+    }
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: var(--color-red);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 2px;
+      background-color: currentColor;
+      transition-duration: inherit;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: -2px;
+
+    @include tablet {
+      font-size: 55px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    opacity: 70%;
+    margin-bottom: var(--marginBottomText);
+  }
+
+  &__element {
+    position: relative;
+    max-width: 500px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -7.5%;
+      left: 15%;
+      width: 25%;
+      height: 25%;
+      z-index: -1;
+      background: url(../images/hero/before-elmnt.svg) no-repeat;
+
+      @include tablet {
+        width: 30%;
+      }
+
+      @include mobile {
+        width: 25%;
+        height: 22%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 2%;
+      z-index: 3;
+      width: 28%;
+      height: 25%;
+      background: url(../images/hero/moon-decor.svg) no-repeat;
+
+      @include tablet {
+        width: 38%;
+        height: 35%;
+      }
+
+      @include mobile {
+        width: 28%;
+        height: 30%;
+      }
+    }
+
+    @include tablet {
+      width: 45%;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-top: 30px;
+    }
+    @include mobile-s {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+
+    @include mobile {
+      width: 82%;
+    }
+  }
+
+  &__decoration {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 87%;
+      z-index: 3;
+      width: 12%;
+      height: 20%;
+      background: url(../images/hero/makarons.svg) no-repeat;
+
+      @include mobile {
+        width: 8%;
+        height: 25%;
+      }
+    }
+  }
+
+  &__button {
+    @include mobile {
+      width: 32%;
+    }
+    @include mobile-s {
+      width: 45%;
+    }
+  }
+}
+
+// Fix problem with image and decoration(__decoration) on mobile =)

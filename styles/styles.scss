@@ -1,0 +1,11 @@
+@import "variables";
+@import "fonts";
+@import "normalize";
+@import "mixins";
+@import "media";
+@import "globals";
+@import "utils";
+
+@import "blocks/header", "blocks/button", "blocks/burger-button", "blocks/mobile-overlay",
+  "blocks/cross-button", "blocks/section", "blocks/hero", "blocks/services", "blocks/services-card",
+  "blocks/comment";

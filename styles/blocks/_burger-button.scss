@@ -1,0 +1,19 @@
+.burger-button {
+  @include reset-button;
+  @include square(48px);
+
+  position: relative;
+
+  &::after {
+    @include abs-center;
+    content: "";
+    width: 50%;
+    height: 3px;
+
+    background-color: var(--color-dark);
+    border-radius: 5px;
+    box-shadow:
+      0 8px 0 var(--color-dark),
+      0 -8px 0 var(--color-dark);
+  }
+}
