@@ -1,0 +1,48 @@
+.resources {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 122px;
+  border-bottom: 2px solid;
+  border-color: var(--color-gray);
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    column-gap: 50px;
+    row-gap: 80px;
+
+    @include tablet {
+      column-gap: 28px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  &__elements {
+    display: flex;
+    column-gap: 30px;
+
+    @include tablet {
+      column-gap: 14px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__description {
+    opacity: 70%;
+  }
+}
