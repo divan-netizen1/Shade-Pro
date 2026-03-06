@@ -15,6 +15,13 @@
     margin-top: 117px;
     margin-bottom: 90px;
 
+    &--left {
+      align-items: flex-start;
+      max-width: 515px;
+      width: 100%;
+      text-align: left;
+    }
+
     @include tablet-above {
       margin-top: 90px;
       margin-bottom: 80px;
@@ -36,5 +43,9 @@
     text-align: center;
     font-weight: 700;
     color: inherit;
+
+    &--left {
+      text-align: left;
+    }
   }
 }
