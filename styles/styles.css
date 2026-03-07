@@ -504,6 +504,11 @@ h4 {
   top: 170px;
   background: url(../images/resource/decoration-points.svg) no-repeat;
 }
+@media (max-width: 767px) {
+  .section--gray::after {
+    top: 40px;
+  }
+}
 .section--hidden-x {
   overflow-x: hidden;
 }
@@ -1224,5 +1229,110 @@ h4 {
 @media (max-width: 767px) {
   .nextpage__description {
     text-align: center;
+  }
+}
+
+.works__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  -moz-column-gap: 72px;
+       column-gap: 72px;
+}
+@media (max-width: 1023px) {
+  .works__container {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .works__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .works-card:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .works-card {
+    margin-bottom: 50px;
+  }
+}
+.works-card__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+@media (max-width: 1023px) {
+  .works-card__column {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .works-card__column {
+    row-gap: 0;
+  }
+}
+.works-card__body {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 34px;
+  row-gap: 14px;
+}
+@media (max-width: 1023px) {
+  .works-card__body {
+    row-gap: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .works-card__body {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+.works-card__body-job {
+  opacity: 70%;
+}
+.works__box {
+  display: flex;
+  justify-content: center;
+  margin-top: 95px;
+}
+@media (max-width: 1023px) {
+  .works__box {
+    margin-top: 68px;
+  }
+}
+@media (max-width: 480px) {
+  .works__box {
+    margin-top: 30px;
+  }
+}
+.works__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-blue);
+  width: 155px;
+  height: 30px;
+}
+@media (hover: hover) {
+  .works__link:hover {
+    transform: translateX(10px);
+    transition-duration: var(--transition-duration);
+  }
+}
+@media (hover: none) {
+  .works__link:active {
+    transform: translateX(10px);
+    transition-duration: var(--transition-duration);
   }
 }/*# sourceMappingURL=styles.css.map */

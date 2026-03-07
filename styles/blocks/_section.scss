@@ -10,10 +10,9 @@
     margin-top: 110px;
     z-index: 1;
 
-    @include tablet{
-    margin-top: 70px;
+    @include tablet {
+      margin-top: 70px;
     }
-
     // header decoration "resources"
     &::after {
       content: "";
@@ -23,6 +22,10 @@
       left: 0;
       top: 170px;
       background: url(../images/resource/decoration-points.svg) no-repeat;
+
+      @include mobile {
+        top: 40px;
+      }
     }
   }
 
