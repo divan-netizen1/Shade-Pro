@@ -1,0 +1,22 @@
+.mini {
+  color: var(--color-light);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 18px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__description {
+    opacity: 70%;
+  }
+}
