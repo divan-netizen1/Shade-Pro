@@ -1,0 +1,11 @@
+.soc1als {
+  &__list {
+    display: flex;
+    column-gap: 24px;
+  }
+  &__link {
+    @include hover {
+      color: var(--color-green);
+    }
+  }
+}

@@ -374,11 +374,13 @@ h4 {
 @media (hover: hover) {
   .button:hover {
     background-color: var(--color-dark);
+    border: 2px solid var(--color-light);
   }
 }
 @media (hover: none) {
   .button:active {
     background-color: var(--color-dark);
+    border: 2px solid var(--color-light);
   }
 }
 
@@ -511,6 +513,10 @@ h4 {
 }
 .section--blue {
   background: url(../images/testimonial/bground.jpg);
+}
+.section--black {
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 .section--hidden-x {
   overflow-x: hidden;
@@ -1367,5 +1373,106 @@ h4 {
   .works__link:active {
     transform: translateX(10px);
     transition-duration: var(--transition-duration);
+  }
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__main {
+  display: flex;
+  padding-block: 100px;
+  align-items: center;
+  border-top: 1px solid var(--color-gray);
+}
+@media (max-width: 1023px) {
+  .footer__main {
+    padding-block: 85px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-right: 124px;
+  padding-right: 36px;
+}
+@media (max-width: 1023px) {
+  .footer__box {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__box {
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+.footer__description {
+  opacity: 0.7;
+}
+.footer__navigation {
+  display: flex;
+  -moz-column-gap: 47px;
+       column-gap: 47px;
+}
+@media (max-width: 767px) {
+  .footer__navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
+.footer__menu-name {
+  opacity: 70%;
+  margin-bottom: 20px;
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+@media (max-width: 767px) {
+  .footer__menu-list {
+    row-gap: 30px;
+  }
+}
+@media (hover: hover) {
+  .footer__menu-link:hover {
+    color: var(--color-green);
+  }
+}
+@media (hover: none) {
+  .footer__menu-link:active {
+    color: var(--color-green);
+  }
+}
+
+.soc1als__list {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (hover: hover) {
+  .soc1als__link:hover {
+    color: var(--color-green);
+  }
+}
+@media (hover: none) {
+  .soc1als__link:active {
+    color: var(--color-green);
   }
 }/*# sourceMappingURL=styles.css.map */

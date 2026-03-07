@@ -33,6 +33,11 @@
     background: url(../images/testimonial/bground.jpg);
   }
 
+  &--black {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+
   &--hidden-x {
     overflow-x: hidden;
   }
