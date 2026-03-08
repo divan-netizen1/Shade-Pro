@@ -31,9 +31,5 @@
 
   &__description {
     opacity: 70%;
-
-    @include mobile {
-      text-align: center;
-    }
   }
 }

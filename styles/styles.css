@@ -1245,11 +1245,6 @@ h4 {
 .nextpage__description {
   opacity: 70%;
 }
-@media (max-width: 767px) {
-  .nextpage__description {
-    text-align: center;
-  }
-}
 
 .mini {
   color: var(--color-light);
@@ -1432,9 +1427,14 @@ h4 {
 @media (max-width: 767px) {
   .footer__navigation {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     row-gap: 50px;
   }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__menu-name {
   opacity: 70%;
@@ -1448,6 +1448,7 @@ h4 {
 @media (max-width: 767px) {
   .footer__menu-list {
     row-gap: 30px;
+    text-align: center;
   }
 }
 @media (hover: hover) {
@@ -1459,6 +1460,11 @@ h4 {
   .footer__menu-link:active {
     color: var(--color-green);
   }
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
 .soc1als__list {

@@ -51,11 +51,15 @@
 
     @include mobile {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       row-gap: 50px;
     }
   }
   &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &-name {
       opacity: 70%;
       margin-bottom: 20px;
@@ -67,6 +71,7 @@
       row-gap: 16px;
       @include mobile {
         row-gap: 30px;
+        text-align: center;
       }
     }
 
@@ -75,5 +80,10 @@
         color: var(--color-green);
       }
     }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
   }
 }
